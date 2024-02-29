@@ -37,7 +37,7 @@ export function CreateTagForm() {
       // delay 2s
       await new Promise(resolve => setTimeout(resolve, 2000))
 
-      await fetch('https://3333-alvarengaer-reactnaprat-r54cf0axj0m.ws-us108.gitpod.io/tags', {
+      await fetch('https://3333-alvarengaer-reactnaprat-m19xc7xmwie.ws-us108.gitpod.io/tags', {
         method: 'POST',
         body: JSON.stringify({
           title,
