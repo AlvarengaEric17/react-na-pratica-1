@@ -39,7 +39,7 @@ export function App() {
   const { data: tagsResponse, isLoading, isFetching } = useQuery<TagResponse>({
     queryKey: ['get-tags', urlFilter, page],
     queryFn: async () => {
-      const response = await fetch(`https://3333-alvarengaer-reactnaprat-je6sqrhk9si.ws-us108.gitpod.io/tags?_page=${page}&_per_page=10&title=${urlFilter}`)
+      const response = await fetch(`https://3333-alvarengaer-reactnaprat-3ol2u4k1sba.ws-us108.gitpod.io/tags?_page=${page}&_per_page=10&title=${urlFilter}`)
       const data = await response.json()
       //http://localhost:3333/tags?_page=${page}&_per_page=10&title=${urlFilter}
       return data
